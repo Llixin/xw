@@ -1,0 +1,10 @@
+《笛卡尔》组 备选复现方案：
+1.如果我们组提交的docker image无法使用gpu运行模型代码，那么采用此备选方案
+2.操作说明：
+<1>.pip安装requirements.txt文件内列据的依赖包,并确认版本与之对应无误。
+<2>.运行run.sh文件进行训练
+<3>.等待<2>训练完毕，会在当前目录下产生train_submit1.csv,train_submit2.csv 2个文件，这两个文件分别为我们提交private榜的2个提交文件（即预测结果）
+3.训练时长
+在一张Titan XP上，CNN 20小时 CRNN20小时 Res2net10小时，共计50小时。
+4.备注
+操作系统版本：ubuntu18.04 cuda版本：9.0.176 cudnn版本：7.6.2
